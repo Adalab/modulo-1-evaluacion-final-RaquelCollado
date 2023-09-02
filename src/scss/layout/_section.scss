@@ -1,5 +1,93 @@
 .section{
+    text-align: center;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 102px 114px 104px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: $light-grey;
+    &_parraf{
+        grid-column: span 3;
+        grid-row: 1/2;
+        margin-top: 18px;
+        font-size: 12px;
+        font-family: $font-title;
+        font-weight: 700;
+        color: $greyish-brown;
+    }
+    &_title{
+        grid-column: span 3;
+        grid-row: 2/3;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: $font-title;
+        font-weight: bold;
+    }
+    &_product{
+        display: grid;
+        
+        &_backpack{
+            grid-column: span 3;
+            grid-row: 3/4;
+            width: 114px;
+            height: 124px;
+            border-radius: 50%;
+        }    
+        &_link{
+            grid-row: 3/4;
+            grid-column: span 3;
+            font-family: $font-title;
+            text-decoration: none;
+            color: $black;
+            }
+        &_case{
+            grid-column: span 3;
+            grid-row: 4/5;
+            align-items: center;
+            width: 114px;
+            height: 124px;
+            border-radius: 50%;
+            }    
+        &_link{
+            grid-column: span 3;
+            grid-row: 4/5;
+            font-family: $font-title;
+            text-decoration: none;
+            color: $black;
+                }
+        &_sportbag{
+            grid-column: span 3;
+            grid-row: 5/6;
+            align-items: center;
+            width: 114px;
+            height: 124px;
+            border-radius: 50%;
+                }    
+        &_link{
+            grid-column: span 3;
+            grid-row: 5/6;
+            font-family: $font-title;
+            text-decoration: none;
+            color: $black;
+                    }
+    &_startnow{
+        grid-column: span 3;
+        grid-row: 6/7;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: $font-text;
+        font-weight: 500;
+        color: $white;
+        padding: 10px 45px;
+        border: solid;
+        background-color: $moss-green;
+        border-radius: 60px;
+        }
+        
+    
+    }
+    
     
   
 
-    }
+    
+}

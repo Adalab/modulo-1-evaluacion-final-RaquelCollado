@@ -16,6 +16,9 @@
     }
 
     &_links{
+        font-family: $font-text;
+        text-decoration: none;
+        color: $white;
         text-transform: uppercase;
         text-align: center;
         &_clothe{

@@ -1,28 +1,47 @@
 .hero{
     width: 100%;
-    display: flex;
-    flex-direction: column;
+   
     &_image{
           background-image: url("../images/cover.jpeg");
           background-repeat: no-repeat;
           background-position: 84%;
           width: 100%;
           height: 700px;
-         }
-    &_title{
-        color: white;
-        font-weight: bold;
-        font-size: 1.87rem;
-        text-transform: uppercase;
-        transform: translateY(-20rem);
-        text-align: center;
-        line-height: 50px;
-        
-        
+          &_message{
+            padding-top: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &_title{
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 50px;
+            padding-bottom: 10px;
+            }
+            &_text{
+            color: $white;
+            text-align: center;
+            }
+          }
+          &_button{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(70%) translateX(350%);
+            background-color: $white;
+            padding: 11px;
+            
 
-
+          }
+        
     }
-    }
+}
 
 
     

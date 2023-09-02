@@ -1,13 +1,14 @@
 .section{
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
-    height: 650px;
+    height: 610px;
     display: grid;
-    grid-template-columns: 102px 114px 104px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 130px 1fr;
+    grid-template-rows: 40px 40px 180px 180px 180px;
     background-color: $light-grey;
     &_parraf{
         grid-column: span 3;
-        grid-row: 1/2;
         margin-top: 18px;
         font-size: 12px;
         font-family: $font-title;
@@ -21,73 +22,79 @@
         font-size: 20px;
         font-family: $font-title;
         font-weight: bold;
+        padding-bottom: 20px;
     }
     &_product{
-        display: grid;
-        
+        grid-column: 2/3 ;
+        text-align: center;
+        padding-bottom: 20px;
         &_backpack{
-            grid-column: span 3;
-            grid-row: 3/4;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            grid-row: 1/2;
             width: 114px;
             height: 124px;
             border-radius: 50%;
-        }    
-        &_link{
-            grid-row: 3/4;
-            grid-column: span 3;
-            font-family: $font-title;
-            text-decoration: none;
-            color: $black;
+            &_link{
+                text-decoration: none;
+                font-size: 14px;
+                font-family: $font-title;
+                color: $black;
+                font-weight: 700;
             }
+        }    
         &_case{
-            grid-column: span 3;
-            grid-row: 4/5;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            grid-row: 2/3;
             align-items: center;
             width: 114px;
             height: 124px;
             border-radius: 50%;
-            }    
-        &_link{
-            grid-column: span 3;
-            grid-row: 4/5;
-            font-family: $font-title;
-            text-decoration: none;
-            color: $black;
+            &_link{
+                text-decoration: none;
+                font-size: 14px;
+                font-family: $font-title;
+                color: $black;
+                font-weight: 700;
                 }
+            }    
         &_sportbag{
-            grid-column: span 3;
-            grid-row: 5/6;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            grid-row: 3/4;
             align-items: center;
             width: 114px;
             height: 124px;
             border-radius: 50%;
-                }    
-        &_link{
-            grid-column: span 3;
-            grid-row: 5/6;
-            font-family: $font-title;
-            text-decoration: none;
-            color: $black;
-                    }
-    &_startnow{
+            &_link{
+                text-decoration: none;
+                font-size: 14px;
+                font-family: $font-title;
+                color: $black;
+                font-weight: 700;
+                gap: 10px;
+            }
+        } 
+    } 
+}          
+.startnow{
+    background-color:$light-grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px;
+    text-align: center;
+            
+    &_nav{
         grid-column: span 3;
-        grid-row: 6/7;
-        text-decoration: none;
+        &_a{
+        text-decoration: none;    
         font-size: 20px;
         font-family: $font-text;
         font-weight: 500;
         color: $white;
-        padding: 10px 45px;
-        border: solid;
+        padding: 10px 30px;
         background-color: $moss-green;
-        border-radius: 60px;
-        }
+        border-radius: 40px;
         
+            }  
+        }
+}    
     
-    }
-    
-    
-  
-
-    
-}

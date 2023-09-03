@@ -7,6 +7,10 @@
     grid-template-columns: 1fr 130px 1fr;
     grid-template-rows: 40px 40px 180px 180px 180px;
     background-color: $light-grey;
+    @media all and (min-width:768px){
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  40px 40px 130px 130px 130px;
+    }
     &_parraf{
         grid-column: span 3;
         margin-top: 18px;
@@ -27,6 +31,9 @@
     &_product{
         grid-column: 2/3 ;
         text-align: center;
+        @media all and (min-width:768px){
+        }
+
         &_backpack{
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
             grid-row: 1/2;

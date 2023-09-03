@@ -4,6 +4,9 @@
     flex-direction: column;
     padding-left: 20px;
     padding-right: 17px;
+    @media all and (min-width:768px){
+        height: 340px;
+    }
     &_span{
         text-transform: uppercase;
         font-size: 14px;
@@ -11,6 +14,7 @@
         padding-top: 34px;
         padding-bottom: 10px;
         color: $moss-green;
+        margin-left: 5px;
     }
     &_article{
         &_title{
@@ -19,6 +23,7 @@
             font-family: $font-title;
             font-weight: 700;
             padding-bottom: 20px;
+            margin-left: 5px;
         }
         &_text{
             font-size: 18px;
@@ -27,8 +32,13 @@
             color: $greyish-brown;
             line-height: 30px;
             padding-bottom: 60px;
+            @media all and (min-width:768px){
+                margin-left: 40px;
+                margin-right: 40px;
+            }
         }
         &_button{
+            &_link{
             margin-top: 30px;
             margin-bottom: 20px;
             text-decoration: none;
@@ -40,6 +50,14 @@
             border: solid 2px;
             border-color: $moss-green;
             border-radius: 60px;
-        }
+                &:hover{
+                transition: rotate (45deg);
+                transform: rotateY(180deg) rotateZ(180deg);
+                }
+            @media all and (min-width:768px){
+                margin-left: 40px;
+            }
+            }
+        }    
     }
 }

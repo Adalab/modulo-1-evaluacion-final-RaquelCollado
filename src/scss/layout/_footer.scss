@@ -13,8 +13,21 @@
         padding: 11px 13px;
         border-radius: 50%;
         transform: translateY(10%);
+        &_link{
+            &_image:hover{
+                animation: move-down-up 2s infinite;
+            @keyframes move-down-up{             
+                from{                 
+                    transform:
+                    translateY(20px);
+                }
+                to{
+                    transform: translateY(-20px);
+                }
+            }
     }
-
+        }
+    }
     &_links{
         font-family: $font-text;
         text-decoration: none;
@@ -52,6 +65,4 @@
             color: $moss-green;
         }
     }
-
-    
 }

@@ -7,12 +7,36 @@
     align-items: center;
     font-family: "$font-text";
     color: $white;
+    @media all and (min-width:768px){
+        height: 300px;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding-left: 50px;
+    }
+    @media all and (min-width:1024px){
+        height: 250px;
+       display: flex;
+       flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 
     &_icon{
         background-color: $white;
         padding: 11px 13px;
         border-radius: 50%;
-        transform: translateY(10%);
+        position: relative;
+        top: -32px;
+        @media all and (min-width:768px){
+            position: relative;
+            top: -150px;
+            right: 45%;
+        }
+        @media all and (min-width:1024px){
+            position: relative;
+            top: -125px;
+            right: 50%;
+         }
+
         &_link{
             &_image:hover{
                 animation: move-down-up 2s infinite;
@@ -38,31 +62,76 @@
             line-height: 33px;
             margin-top: 20px;
             padding-bottom: 25px;
-            &_a{
-                text-decoration: none;
-                color: $white;
+            @media all and (min-width:768px){
+               text-align: justify;
             }
-        }
-        &_networks{
-            line-height: 33px;
-            padding-bottom: 25px;
             &_a{
                 text-decoration: none;
                 color: $white;
             }
         }
     }
+    &_links1{
+        font-family: $font-text;
+        text-decoration: none;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        @media all and (min-width:768px){
+            padding-top: 20px;
+            padding-left: 70px;
+        }
+        @media all and (min-width:1024px){
+            
+            padding-left: 150px;
+        }
+        &_networks{
+            line-height: 33px;
+            padding-bottom: 25px;
+            @media all and (min-width:768px){
+                text-align: justify;
+             }
+            &_a{
+                text-decoration: none;
+                color: $white;
+            }
+        }
+        
+    }
     &_copy{
         font-size: 14px; 
         font-family: $font-text;
+        
     }
     &_love{
         font-family: $font-text;
         padding-top: 15px;
         font-size: 14px;
-        margin-bottom: 80px;
+        
+        @media all and(min-width:768px){
+        }
         &_heart{
             color: $moss-green;
+            
         }
+    }
+}
+.footer_div{
+    display: flex;
+    flex-direction: column;
+    @media all and (min-width:768px){
+        padding-bottom: 96px;
+        padding-left: 80px;
+    }
+}
+.footer_section{
+    display: flex;
+    flex-direction: column;
+    @media all and (min-width:768px){
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding-left: 2rem;
+        
     }
 }

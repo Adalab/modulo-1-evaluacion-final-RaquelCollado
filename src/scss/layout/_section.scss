@@ -4,15 +4,18 @@
     text-align: center;
     height: 610px;
     display: grid;
-    grid-template-columns: 1fr 130px 1fr;
-    grid-template-rows: 40px 40px 180px 180px 180px;
+    
     background-color: $light-grey;
     @media all and (min-width:768px){
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows:  40px 40px 130px 130px 130px;
+        height: 300px;
+        grid-template-columns: 1fr 130px 1fr;
+    
     }
     &_parraf{
-        grid-column: span 3;
+        @media all and (min-width:768px){
+            grid-template-rows: 40px 40px 180px 180px 180px;
+            grid-column: span 3;
+        }
         margin-top: 18px;
         font-size: 12px;
         font-family: $font-title;
@@ -20,8 +23,10 @@
         color: $greyish-brown;
     }
     &_title{
-        grid-column: span 3;
-        grid-row: 2/3;
+        @media all and (min-width:768px){
+            grid-column: span 3;
+           padding-bottom: 15px;
+        }
         text-transform: uppercase;
         font-size: 20px;
         font-family: $font-title;
@@ -29,14 +34,12 @@
         padding-bottom: 20px;
     }
     &_product{
-        grid-column: 2/3 ;
         text-align: center;
         @media all and (min-width:768px){
         }
-
         &_backpack{
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-            grid-row: 1/2;
+            align-items: center;
             width: 114px;
             height: 124px;
             border-radius: 50%;
@@ -46,11 +49,11 @@
                 font-family: $font-title;
                 color: $black;
                 font-weight: 700;
+
             }
         }    
         &_case{
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-            grid-row: 2/3;
             align-items: center;
             width: 114px;
             height: 124px;
@@ -65,7 +68,6 @@
             }    
         &_sportbag{
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-            grid-row: 3/4;
             align-items: center;
             width: 114px;
             height: 124px;
@@ -76,7 +78,7 @@
                 font-family: $font-title;
                 color: $black;
                 font-weight: 700;
-                gap: 10px;
+                
             }
         } 
     } 
@@ -102,5 +104,4 @@
         
             }  
         }
-}    
-    
+}      

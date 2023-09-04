@@ -20,7 +20,7 @@ Several points have to be solved:
 
 ### Setup 🚀
 
-1. Clone the repo: `https://github.com/IsabelCollado/Portfolio.git` using:
+1. Clone the repo:
 
 ```bash
  git clone

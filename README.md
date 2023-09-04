@@ -20,7 +20,7 @@ Several points have to be solved:
 
 ### Setup 🚀
 
-1. Clone the repo:
+1. Clone the repo: 'http://beta.adalab.es/modulo-1-evaluacion-final-RaquelCollado/'
 
 ```bash
  git clone

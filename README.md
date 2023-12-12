@@ -20,7 +20,7 @@ Several points have to be solved:
 
 ### Setup 🚀
 
-1. Clone the repo: `https://github.com/Adalab/modulo-1-evaluacion-final-RaquelCollado.git` using:
+1. Clone the repo: `https://github.com/RaquelCollado/Web-Vuelta-al-cole` using:
 
 ```bash
  git clone
